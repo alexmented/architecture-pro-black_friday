@@ -81,8 +81,6 @@ db.helloDoc.countDocuments()
 EOF
 ```
 
-## Проверка репликации
-
 ### Проверка статуса реплик Шарда 1
 
 ```shell
@@ -108,8 +106,6 @@ db.helloDoc.countDocuments()
 EOF
 ```
 
-Ожидаемый результат: **~500 документов**
-
 ### Проверка на втором шарде
 
 ```shell
@@ -118,5 +114,3 @@ use somedb
 db.helloDoc.countDocuments()
 EOF
 ```
-
-Ожидаемый результат: **~500 документов**
